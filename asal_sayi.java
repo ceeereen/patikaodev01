@@ -2,7 +2,11 @@ import java.util.Scanner;
 
 public class asal_sayi {
     public static void main(String[] args) {
+      checkPrime();
+      
+    }
 
+    public static void checkPrime(){
       Scanner scanner = new Scanner(System.in);
       System.out.println("Bir sayı giriniz: ");
       int i = scanner.nextInt();
