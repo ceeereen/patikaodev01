@@ -8,20 +8,21 @@ public class asal_sayi {
       int i = scanner.nextInt();
       System.out.println("Bir sayı giriniz: ");
       int j = scanner.nextInt();
-       boolean asalMi;
-       System.out.println("1-100 arasindaki asal sayilar:");
-       for(i=2;i<=100;i++) {
-          asalMi=true;
-          for(j=2;j<i;j++) {
-             if(i%j==0) {
-                asalMi=false;
+      
+       System.out.println(i + "-" + j + " arasindaki asal sayilar:");
+       for(int num = i; num <= j; num++) {
+         boolean asalMi = true;
+         
+         for(int k = 2; k < num; k++) {
+             if(num % k == 0) {
+                asalMi = false;
                 break;
              }
           }
+          
           if(asalMi) {
-             System.out.print(i + " ");
+             System.out.print(num + " ");
           }
        }
     }
- }
- 
+}
