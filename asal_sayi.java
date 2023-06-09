@@ -28,5 +28,6 @@ public class asal_sayi {
              System.out.print(num + " ");
           }
        }
+       scanner.close();
     }
 }
